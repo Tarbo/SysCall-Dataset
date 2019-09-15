@@ -1,0 +1,20 @@
+For entries with SYSCALL (left to right)
+----------------------------------------
+
+- Timestamp
+- "SYSCALL"
+- RAX (this is usually the name of the syscall, see: https://filippo.io/linux-syscall-table/)
+- RDI (optional syscall argument)
+- RSI (optional syscall argument)
+- RDX (optional syscall argument)
+- R10 (optional syscall argument)
+- R8 (optional syscall argument)
+- R9 (optional syscall argument)
+- CR3 (process page table pointer which called this syscall)
+
+
+For entries with SYSRET
+-----------------------
+
+- Timestamp
+- CR3 (process page table pointer which called this syscall)
