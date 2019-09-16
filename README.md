@@ -91,7 +91,7 @@ of the Bochs VM.
 - CR3 (process page table pointer which called this syscall)
 
 ## Processed Dataset Format
-From left to right
-------------------
+### From left to right
+----------------------
 - Ti-Ti-1 (Difference between current timestamp and previous timestamp values)
 - SysCall ID
