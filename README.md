@@ -1,7 +1,7 @@
 SysCall Dataset
 
 # Design Notes
-#Overview
+### Overview
 
 - Everything executes in one Docker container.
 
@@ -16,7 +16,7 @@ logging ends when the user executes the Linux command `mkdir FlightEnd`.
 running, `mkdir FlightBegin; ./program; mkdir FlightEnd`
 
 
-#Drone Physics Simulation
+### Drone Physics Simulation
 
 - Taking the ideas from the WVU AtLAS project I created a simple physics
 model of a drone simulating:
@@ -32,7 +32,7 @@ interfaced with through the following commands:
 of the Bochs VM.
 
 
-#Auto-Piloting The Virtual Serial Port Drone
+### Auto-Piloting The Virtual Serial Port Drone
 
 - A Python script running within the Bochs VM controls the drone
 - The controller goes through the following states:
@@ -56,7 +56,7 @@ of the Bochs VM.
 	3. Random syscall - to test anomaly detection the controller sometimes sends random UDP data to a port on 127.0.0.1
 
 
-#The Results
+### The Results
 
 - 001_NORMAL_Flight.txt: Runs properly, no code to interfere with performance
 
@@ -68,8 +68,8 @@ of the Bochs VM.
 	localhost ports. The flight proceeds properly, but there should be new syscalls
 	mixed in.
 
-# Raw Dataset Format
-For entries with SYSCALL (left to right)
+## Raw Dataset Format
+### For entries with SYSCALL (left to right)
 ----------------------------------------
 
 - Timestamp
@@ -84,14 +84,14 @@ For entries with SYSCALL (left to right)
 - CR3 (process page table pointer which called this syscall)
 
 
-For entries with SYSRET
+### For entries with SYSRET
 -----------------------
 
 - Timestamp
 - CR3 (process page table pointer which called this syscall)
 
-# Processed Dataset Format
+## Processed Dataset Format
 From left to right
 ------------------
-Ti-Ti-1 (Difference between current timestamp and previous timestamp values)
-SysCall ID
+- Ti-Ti-1 (Difference between current timestamp and previous timestamp values)
+- SysCall ID
