@@ -1,6 +1,4 @@
-SysCall Dataset
-
-# Design Notes
+# SysCall Dataset: Design Notes
 ### Overview
 
 - Everything executes in one Docker container.
