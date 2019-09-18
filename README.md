@@ -62,7 +62,7 @@ of the Bochs VM.
 	this results in too slow polling of the drone's sensors and consequentially the drone
 	flies too high before it comes down and crashes. It does not reach its destination.
 
-- 003: 003_SOCKETS_Flight.txt: During crusing mode UDP packets are sent to random
+- 003_SOCKETS_Flight.txt: During crusing mode UDP packets are sent to random
 	localhost ports. The flight proceeds properly, but there should be new syscalls
 	mixed in.
 
@@ -91,5 +91,5 @@ of the Bochs VM.
 ## Processed Dataset Format
 ### From left to right
 ----------------------
-- Ti-Ti-1 (Difference between current timestamp and previous timestamp values)
+- T<sub>i</sub>-T<sub>i-1</sub> (Difference between current timestamp and previous timestamp values)
 - SysCall ID
