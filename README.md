@@ -89,6 +89,9 @@ of the Bochs VM.
 - CR3 (process page table pointer which called this syscall)
 
 ## Processed Dataset Format
+
+Execute the process_data.py to generate the processed dataset. Remember to use a full path to where you repository is saved to avoid `File does not exist error`.
+
 ### From left to right
 ----------------------
 - T<sub>i</sub>-T<sub>i-1</sub> (Difference between current timestamp and previous timestamp values)
